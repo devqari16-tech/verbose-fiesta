@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BABA WINDOWS TINTING - Invoice</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; color: #333;">
+    <table style="max-width: 600px; margin: 0 auto; background-color: white; border: 2px solid #000; border-collapse: collapse; width: 100%;">
+        <!-- Header -->
+        <tr>
+            <td style="text-align: center; padding: 20px; border-bottom: 2px solid #000;">
+                <h1 style="font-size: 18px; font-weight: bold; margin: 0;">AI BABA SERVICES INC</h1>
+                <p style="font-size: 12px; margin: 5px 0 0 0; color: #666;">Professional Automotive & Commercial Services</p>
+                <div style="margin-top: 15px; font-size: 12px; line-height: 1.4;">
+                    <strong>127 Manville Rd, Unit 1, Toronto, ON</strong><br>
+                    Email: aibaba.service@gmail.com | Phone: 647-778-4830 / 437-545-7974<br>
+                    Business Number: 70105 1351
+                </div>
+            </td>
+        </tr>
+
+        <!-- Customer Information -->
+        <tr>
+            <td style="padding: 15px 20px; border-bottom: 1px solid #000;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 4px 0;">
+                            <strong>Customer:</strong> {{customer_name}}
+                        </td>
+                        <td style="padding: 4px 0; text-align: right;">
+                            <strong>Date:</strong> {{invoice_date}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 4px 0;">
+                            <strong>Phone:</strong> {{customer_phone}}
+                        </td>
+                        <td style="padding: 4px 0; text-align: right;">
+                            <strong>Vehicle:</strong> {{vehicle_details}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding: 4px 0;">
+                            <strong>Address:</strong> {{customer_address}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding: 4px 0;">
+                            <strong>Invoice ID:</strong> {{invoice_id}}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Service Items Table -->
+        <tr>
+            <td style="padding: 0;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #000; padding: 8px; text-align: center; font-weight: bold; width: 60px;">Qty</th>
+                            <th style="border: 1px solid #000; padding: 8px; text-align: center; font-weight: bold;">Description</th>
+                            <th style="border: 1px solid #000; padding: 8px; text-align: center; font-weight: bold; width: 80px;">Model</th>
+                            <th style="border: 1px solid #000; padding: 8px; text-align: center; font-weight: bold; width: 80px;">Serial #</th>
+                            <th style="border: 1px solid #000; padding: 8px; text-align: center; font-weight: bold; width: 100px;">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service1_qty}}</td>
+                            <td style="border: 1px solid #000; padding: 8px;">{{service1_desc}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service1_model}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service1_serial}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{{service1_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service2_qty}}</td>
+                            <td style="border: 1px solid #000; padding: 8px;">{{service2_desc}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service2_model}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service2_serial}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{{service2_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service3_qty}}</td>
+                            <td style="border: 1px solid #000; padding: 8px;">{{service3_desc}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service3_model}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service3_serial}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{{service3_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service4_qty}}</td>
+                            <td style="border: 1px solid #000; padding: 8px;">{{service4_desc}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service4_model}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service4_serial}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{{service4_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service5_qty}}</td>
+                            <td style="border: 1px solid #000; padding: 8px;">{{service5_desc}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service5_model}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">{{service5_serial}}</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{{service5_amount}}</td>
+                        </tr>
+                        <!-- Empty rows for spacing -->
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                            <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Notes and Totals Section -->
+        <tr>
+            <td style="padding: 0; border-top: 1px solid #000;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="width: 60%; padding: 15px; border-right: 1px solid #000; vertical-align: top;">
+                            <strong>Notes:</strong>
+                            <div style="font-size: 12px; line-height: 1.3; margin-top: 5px;">
+                                {{special_instructions}}
+                                <br><br>
+                                <strong>Warranty:</strong><br>
+                                {{warranty_info}}
+                            </div>
+                        </td>
+                        <td style="width: 40%; padding: 15px; vertical-align: top;">
+                            <table style="width: 100%; font-size: 14px;">
+                                <tr>
+                                    <td style="padding: 3px 0;">Sub Total</td>
+                                    <td style="text-align: right; padding: 3px 0;">${{subtotal}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 3px 0;">Tax</td>
+                                    <td style="text-align: right; padding: 3px 0;">${{tax}}</td>
+                                </tr>
+                                <tr style="border-top: 1px solid #000; font-weight: bold;">
+                                    <td style="padding: 8px 0 3px 0;">Total</td>
+                                    <td style="text-align: right; padding: 8px 0 3px 0;">${{total}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px 0 3px 0;">Deposit</td>
+                                    <td style="text-align: right; padding: 15px 0 3px 0;">${{deposit}}</td>
+                                </tr>
+                                <tr style="border-top: 1px solid #000; font-weight: bold;">
+                                    <td style="padding: 8px 0 3px 0;">Balance</td>
+                                    <td style="text-align: right; padding: 8px 0 3px 0;">${{balance}}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Warranty Section -->
+        <tr>
+            <td style="text-align: center; padding: 15px; border-top: 2px solid #000;">
+                <div style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">Warranty: Free Rock Chip Repair</div>
+                <table style="width: 100%; margin-top: 20px;">
+                    <tr>
+                        <td style="font-weight: bold; width: 150px;">Customer's Signature X</td>
+                        <td style="border-bottom: 1px solid #000; height: 20px;"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
